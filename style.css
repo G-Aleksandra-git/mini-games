@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,14 @@ body {
   background-image: url("./img/star-1.png"), url("./img/star-2.png"), url(./img/star-3.png);
   background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.top__sect {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .top__content {
   max-width: 769px;
@@ -54,4 +63,63 @@ body {
   background-color: #FFFFFF;
   color: #202027;
   transition: all 0.5s ease;
+}
+
+.about {
+  height: 1470px; /*высоту убрать*/
+  padding-top: 94px;
+  padding-bottom: 50px;
+  background-color: #202027;
+  background-image: url("./img/star-4.png"), url("./img/star-5.png");
+  background-position: 25px 77px, calc(100% - 77px) calc(100% - 814px);
+  background-repeat: no-repeat;
+}
+.about__title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 64px;
+  line-height: 78px;
+  padding-bottom: 24px;
+}
+.about__text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 788px;
+  padding-bottom: 72px;
+}
+.about__games {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.about__card {
+  background-color: #FFFFFF;
+  width: 378px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.about__card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.about__box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 32px 36px 32px;
+}
+.about__namber {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  width: 108px;
+  border-radius: 52px;
+  background-color: #F7F7F7;
+  font-size: 16px;
+  font-weight: 500;
+}
+.about__name {
+  font-size: 32px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
