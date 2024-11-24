@@ -106,6 +106,16 @@ body {
         transition: 0.5s;
         }
     }
+    &__card-small {
+        height: 473px;
+    }
+    &__card-big {
+        height: 512px;
+    }
+    &__card-super {
+        height: 551px;
+    }
+
     &__box {
         display: flex;
         flex-direction: column;

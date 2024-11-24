@@ -104,6 +104,15 @@ body {
   transform: scale(1.05);
   transition: 0.5s;
 }
+.about__card-small {
+  height: 473px;
+}
+.about__card-big {
+  height: 512px;
+}
+.about__card-super {
+  height: 551px;
+}
 .about__box {
   display: flex;
   flex-direction: column;
