@@ -95,6 +95,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
+        align-items: flex-start; 
     }
     &__card {
         background-color: $background-wite;
@@ -107,13 +108,21 @@ body {
         }
     }
     &__card-small {
+        align-self: flex-start;
         height: 473px;
+        
     }
     &__card-big {
         height: 512px;
     }
     &__card-super {
-        height: 551px;
+        height: 551px;          
+    }
+    &__card-up {
+        align-self: flex-start;
+    }
+    &__card-down {
+        align-self: flex-end;
     }
 
     &__box {
