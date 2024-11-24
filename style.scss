@@ -1,0 +1,72 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.top {
+    height: 800px;
+
+    &__header {        
+        padding-top: 196px;
+        padding-bottom: 246px;
+        background-color: #E1FF8F;
+        background-image: url('./img/star-1.png'), url('./img/star-2.png'), url(./img/star-3.png);
+        background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        max-width: 769px;              
+    }
+    &__title {
+        font-weight: $font-weight-big;
+        color: $color-text-1;
+        font-size: $font-size-big;
+        line-height: 78px;
+    }
+    &__text {
+        font-size: $font-size-normal;
+        font-weight: $font-weight-normal;
+        color: $color-text-1;
+        max-width: 720px
+    }
+    &__btn {
+        color: $color-text-2;
+        font-size: $font-size-normal;
+        font-weight: $font-weight-fat;
+        font-size: $font-size-normal;
+        font-family: inherit;
+        background: $color-border-dark;
+        box-sizing: border-box;
+        width: 247px;
+        padding: 16px 65px;
+        border-radius: 60px;
+        &:hover {
+            background-color: $color-border-wite;
+            color: $color-text-1;
+            transition: all 0.5s ease;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+

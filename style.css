@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  height: 800px;
+}
+.top__header {
+  padding-top: 196px;
+  padding-bottom: 246px;
+  background-color: #E1FF8F;
+  background-image: url("./img/star-1.png"), url("./img/star-2.png"), url(./img/star-3.png);
+  background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
+  background-repeat: no-repeat;
+}
+.top__content {
+  max-width: 769px;
+}
+.top__title {
+  font-weight: 700;
+  color: #202027;
+  font-size: 64px;
+  line-height: 78px;
+}
+.top__text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #202027;
+  max-width: 720px;
+}
+.top__btn {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: inherit;
+  background: #202027;
+  box-sizing: border-box;
+  width: 247px;
+  padding: 16px 65px;
+  border-radius: 60px;
+}
+.top__btn:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=style.css.map */
