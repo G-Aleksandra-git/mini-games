@@ -50,6 +50,7 @@ body {
     }
     &__btn {
         color: $color-text-2;
+        text-decoration-line: none;
         font-size: $font-size-normal;
         font-weight: $font-weight-fat;
         font-size: $font-size-normal;
@@ -102,10 +103,17 @@ body {
         width: 378px;
         box-sizing: border-box;
         border-radius: 30px;
+        text-decoration: none; /* Убираем подчеркивание */
+        display: block; /* Делаем ссылку блочным элементом */
+        color: $color-text-1; /* Цвет текста - черный */
         &:hover {
         transform: scale(1.05);
         transition: 0.5s;
         }
+    &__card img {
+        width: 100%; /* Чтобы картинка растягивалась на всю карточку */
+        border-radius: 30px 30px 0 0; /* Скругление верхних углов */
+    }
     }
     &__card-small {
         align-self: flex-start;
@@ -123,6 +131,7 @@ body {
     }
     &__card-down {
         align-self: flex-end;
+        margin-top: -39px;
     }
 
     &__box {
