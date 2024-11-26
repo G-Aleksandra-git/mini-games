@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -14,7 +18,7 @@ body {
 }
 
 .top {
-  height: 800px;
+  height: 710px;
 }
 .top__header {
   padding-top: 196px;
@@ -59,15 +63,29 @@ body {
   width: 247px;
   padding: 16px 65px;
   border-radius: 60px;
+  transition: all 0.5s ease;
 }
 .top__btn:hover {
   background-color: #FFFFFF;
   color: #202027;
-  transition: all 0.5s ease;
+}
+
+.stripe {
+  height: 90px;
+  background-color: #BCEC30;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 51px;
+}
+.stripe__word {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
 }
 
 .about {
-  height: 1470px; /*высоту убрать*/
   padding-top: 94px;
   padding-bottom: 50px;
   background-color: #202027;
@@ -104,10 +122,10 @@ body {
   text-decoration: none; /* Убираем подчеркивание */
   display: block; /* Делаем ссылку блочным элементом */
   color: #202027; /* Цвет текста - черный */
+  transition: 0.5s; /*Плавное увеличение и уменьшение карточки*/
 }
 .about__card:hover {
   transform: scale(1.05);
-  transition: 0.5s;
 }
 .about__card__card img {
   width: 100%; /* Чтобы картинка растягивалась на всю карточку */
@@ -148,4 +166,48 @@ body {
 .about__name {
   font-size: 32px;
   font-weight: 700;
+}
+
+.mini {
+  height: 3500px;
+  background-color: #202027;
+  background-image: url("./img/star-6.png"), url("./img/star-7.png");
+  background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 1249px);
+  background-repeat: no-repeat;
+}
+.mini__title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 64px;
+  line-height: 78px;
+  padding-top: 46px;
+  padding-bottom: 72px;
+}
+.mini__card {
+  background-color: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #202027;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mini__right {
+  flex-direction: row-reverse;
+}
+.mini__card img {
+  width: 50%; /* Чтобы картинка растягивалась на всю карточку */
+  border-radius: 30px 30px 0 0; /* Скругление верхних углов */
+}
+.mini__name {
+  line-height: 59px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #202027;
+}
+.mini__descrip {
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #202027;
 }/*# sourceMappingURL=style.css.map */
