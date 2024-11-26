@@ -52,23 +52,25 @@ body {
         max-width: 720px
     }
     &__btn {
-        color: $color-text-2;
-        text-decoration-line: none;
-        font-size: $font-size-normal;
-        font-weight: $font-weight-fat;
-        font-size: $font-size-normal;
-        font-family: inherit;
-        background: $color-border-dark;
-        box-sizing: border-box;
-        width: 247px;
-        padding: 16px 65px;
-        border-radius: 60px;
-        transition: all 0.5s ease;
-        &:hover {
-            background-color: $color-border-wite;
-            color: $color-text-1;            
-        }
+        text-decoration-line: none;        
     }    
+}
+.btn {
+    width: 247px;
+    color: $color-text-2;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-fat;
+    font-size: $font-size-normal;
+    font-family: inherit;
+    background: $color-border-dark;
+    box-sizing: border-box;        
+    padding: 16px 65px;
+    border-radius: 60px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: $color-border-wite;
+        color: $color-text-1;            
+    }
 }
 
 .stripe {    
@@ -189,15 +191,14 @@ body {
         padding-top: 46px;
         padding-bottom: 72px;
     }
-    &__card {
+    &__card {        
         background-color: $background-wite;
         width: 100%;
         box-sizing: border-box;
         border-radius: 30px;               
         color: $color-text-1;
         display: flex;
-        flex-wrap: nowrap;
-    
+        flex-wrap: nowrap;    
     }
     &__right {
         flex-direction: row-reverse;
@@ -207,17 +208,29 @@ body {
         width: 50%; /* Чтобы картинка растягивалась на всю карточку */
         border-radius: 30px 30px 0 0; /* Скругление верхних углов */
     }
-    &__name {
+   
+    &__box {
+        padding: 48px;
+        width: 50%;
+        
+    }
+    &__name {        
+        padding-bottom: 24px;
         line-height: 59px;
         font-size: $font-size-title;
         font-weight: $font-weight-big;
         color: $color-text-1;
     }
     &__descrip {
+        max-width: 400px;
+        padding-bottom: 36px;
         line-height: 32px;
         font-size: $font-size-normal;
         font-weight: $font-weight-normal;
         color: $color-text-1;
+    }
+    &__btn {
+        height: 66px;
     }
    
 

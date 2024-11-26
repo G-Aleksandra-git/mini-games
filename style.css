@@ -52,20 +52,23 @@ body {
   max-width: 720px;
 }
 .top__btn {
-  color: #FFFFFF;
   text-decoration-line: none;
+}
+
+.btn {
+  width: 247px;
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
   font-size: 24px;
   font-family: inherit;
   background: #202027;
   box-sizing: border-box;
-  width: 247px;
   padding: 16px 65px;
   border-radius: 60px;
   transition: all 0.5s ease;
 }
-.top__btn:hover {
+.btn:hover {
   background-color: #FFFFFF;
   color: #202027;
 }
@@ -199,15 +202,25 @@ body {
   width: 50%; /* Чтобы картинка растягивалась на всю карточку */
   border-radius: 30px 30px 0 0; /* Скругление верхних углов */
 }
+.mini__box {
+  padding: 48px;
+  width: 50%;
+}
 .mini__name {
+  padding-bottom: 24px;
   line-height: 59px;
   font-size: 48px;
   font-weight: 700;
   color: #202027;
 }
 .mini__descrip {
+  max-width: 400px;
+  padding-bottom: 36px;
   line-height: 32px;
   font-size: 24px;
   font-weight: 400;
   color: #202027;
+}
+.mini__btn {
+  height: 66px;
 }/*# sourceMappingURL=style.css.map */
