@@ -1,6 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +18,7 @@ body {
 }
 
 .top {
-  height: 800px;
+  height: 710px;
 }
 .top__header {
   padding-top: 196px;
@@ -22,6 +27,14 @@ body {
   background-image: url("./img/star-1.png"), url("./img/star-2.png"), url(./img/star-3.png);
   background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.top__sect {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .top__content {
   max-width: 769px;
@@ -39,6 +52,11 @@ body {
   max-width: 720px;
 }
 .top__btn {
+  text-decoration-line: none;
+}
+
+.btn {
+  width: 247px;
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
@@ -46,12 +64,181 @@ body {
   font-family: inherit;
   background: #202027;
   box-sizing: border-box;
-  width: 247px;
   padding: 16px 65px;
   border-radius: 60px;
+  transition: all 0.5s ease;
 }
-.top__btn:hover {
+.btn:hover {
   background-color: #FFFFFF;
   color: #202027;
-  transition: all 0.5s ease;
+}
+
+.stripe {
+  height: 90px;
+  background-color: #BCEC30;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 51px;
+}
+.stripe__word {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  background-color: #202027;
+  background-image: url("./img/star-4.png"), url("./img/star-5.png");
+  background-position: 25px 77px, calc(100% - 77px) calc(100% - 814px);
+  background-repeat: no-repeat;
+}
+.about__title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 64px;
+  line-height: 78px;
+  padding-bottom: 24px;
+}
+.about__text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 788px;
+  padding-bottom: 72px;
+}
+.about__games {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+.about__card {
+  background-color: #FFFFFF;
+  width: 378px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-decoration: none; /* Убираем подчеркивание */
+  display: block; /* Делаем ссылку блочным элементом */
+  color: #202027; /* Цвет текста - черный */
+  transition: 0.5s; /*Плавное увеличение и уменьшение карточки*/
+}
+.about__card:hover {
+  transform: scale(1.05);
+}
+.about__card__card img {
+  width: 100%; /* Чтобы картинка растягивалась на всю карточку */
+  border-radius: 30px 30px 0 0; /* Скругление верхних углов */
+}
+.about__card-small {
+  align-self: flex-start;
+  height: 473px;
+}
+.about__card-big {
+  height: 512px;
+}
+.about__card-super {
+  height: 551px;
+}
+.about__card-up {
+  align-self: flex-start;
+}
+.about__card-down {
+  align-self: flex-end;
+  margin-top: -39px;
+}
+.about__box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 32px 36px 32px;
+}
+.about__namber {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  width: 108px;
+  border-radius: 52px;
+  background-color: #F7F7F7;
+  font-size: 16px;
+  font-weight: 500;
+}
+.about__name {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.mini {
+  height: 3500px;
+  background-color: #202027;
+  background-image: url("./img/star-6.png"), url("./img/star-7.png");
+  background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
+  background-repeat: no-repeat;
+  padding-bottom: 144px;
+}
+.mini__title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 64px;
+  line-height: 78px;
+  padding-top: 46px;
+  padding-bottom: 72px;
+}
+.mini__games {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.mini__card {
+  background-color: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #202027;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mini__right {
+  flex-direction: row-reverse;
+}
+.mini__card img {
+  width: 50%; /* Чтобы картинка растягивалась на всю карточку */
+  border-radius: 30px 30px 0 0; /* Скругление верхних углов */
+}
+.mini__box {
+  padding: 48px;
+  width: 50%;
+}
+.mini__name {
+  padding-bottom: 24px;
+  line-height: 59px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #202027;
+}
+.mini__descrip {
+  max-width: 400px;
+  padding-bottom: 36px;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #202027;
+}
+.mini__btn {
+  height: 66px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #BCEC30;
+  padding: 60px 0px;
+}
+.footer__text {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
