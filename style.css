@@ -175,8 +175,9 @@ body {
   height: 3500px;
   background-color: #202027;
   background-image: url("./img/star-6.png"), url("./img/star-7.png");
-  background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 1249px);
+  background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
   background-repeat: no-repeat;
+  padding-bottom: 144px;
 }
 .mini__title {
   font-weight: 700;
@@ -185,6 +186,11 @@ body {
   line-height: 78px;
   padding-top: 46px;
   padding-bottom: 72px;
+}
+.mini__games {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
 }
 .mini__card {
   background-color: #FFFFFF;
@@ -223,4 +229,16 @@ body {
 }
 .mini__btn {
   height: 66px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #BCEC30;
+  padding: 60px 0px;
+}
+.footer__text {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

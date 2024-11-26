@@ -75,7 +75,7 @@ body {
 
 .stripe {    
     height: 90px;
-    background-color: #BCEC30;
+    background-color: $background-green;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -180,8 +180,9 @@ body {
     height: 3500px;
     background-color: $background-dark;
     background-image: url('./img/star-6.png'), url('./img/star-7.png');
-    background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 1249px);
+    background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
     background-repeat: no-repeat;
+    padding-bottom: 144px;
     
     &__title {
         font-weight: $font-weight-big;
@@ -190,6 +191,11 @@ body {
         line-height: 78px;
         padding-top: 46px;
         padding-bottom: 72px;
+    }
+    &__games {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
     }
     &__card {        
         background-color: $background-wite;
@@ -231,10 +237,18 @@ body {
     }
     &__btn {
         height: 66px;
+        cursor: pointer;
     }
-   
 
-    
+}
+.footer {
+    background-color: $background-green;    
+    padding: 60px 0px;
 
-
+    &__text {
+        margin: 0;        
+        text-align: center;
+        font-size: $font-size-normal;
+        font-weight: $font-weight-fat;   
+    }
 }
