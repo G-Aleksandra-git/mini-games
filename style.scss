@@ -9,7 +9,7 @@ html {
 }
 
 body {
-        font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .center {
@@ -59,8 +59,7 @@ body {
     width: 247px;
     color: $color-text-2;
     font-size: $font-size-normal;
-    font-weight: $font-weight-fat;
-    font-size: $font-size-normal;
+    font-weight: $font-weight-fat;    
     font-family: inherit;
     background: $color-border-dark;
     box-sizing: border-box;        
@@ -75,10 +74,16 @@ body {
 
 .stripe {    
     height: 90px;
-    background-color: $background-green;
+    background-color: #BCEC30;
+    width: 100%; /* Ограничиваем ширину блока */
+    box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    padding: 0 16px;
+    min-width: 0; /* Запрещаем вылазить содержимому за пределы */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    justify-content: space-between; /* Размещаем элементы равномерно */
     gap: 51px;
     
     &__word {
@@ -120,7 +125,7 @@ body {
     }
     &__card {
         background-color: $background-wite;
-        width: 378px;
+        max-width: 378px;
         box-sizing: border-box;
         border-radius: 30px;
         text-decoration: none; /* Убираем подчеркивание */
@@ -176,8 +181,7 @@ body {
     }
 }
 
-.mini {
-    height: 3500px;
+.mini {      
     background-color: $background-dark;
     background-image: url('./img/star-6.png'), url('./img/star-7.png');
     background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
@@ -192,7 +196,12 @@ body {
         padding-top: 46px;
         padding-bottom: 72px;
     }
-    &__games {
+    &__games {        
+        flex-wrap: wrap; /* Позволяет элементам переноситься */
+        max-width: 100%; /* Ограничиваем ширину */
+        padding: 0 16px; /* Добавляем отступы для контроля */
+        box-sizing: border-box;
+        margin: 0 auto; /* Центрируем блок */
         display: flex;
         gap: 32px;
         flex-direction: column;
@@ -212,6 +221,7 @@ body {
 
     &__card img {
         width: 50%; /* Чтобы картинка растягивалась на всю карточку */
+        max-width: 50%; /* Не позволяет картинке выходить за пределы */
         border-radius: 30px 30px 0 0; /* Скругление верхних углов */
     }
    
@@ -222,6 +232,7 @@ body {
     }
     &__name {        
         padding-bottom: 24px;
+        max-width: 504px;
         line-height: 59px;
         font-size: $font-size-title;
         font-weight: $font-weight-big;
@@ -252,3 +263,5 @@ body {
         font-weight: $font-weight-fat;   
     }
 }
+@import 'tablet';
+@import 'mobile';

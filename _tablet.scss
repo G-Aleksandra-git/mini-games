@@ -1,0 +1,140 @@
+@media (max-width: 1024px) {
+    /*.center {
+        padding-left: calc(50% - 380px);
+        padding-right: calc(50% - 380px);
+    }*/
+    .center {
+        padding-left: 30px; /* Уменьшаем фиксированный отступ */
+        padding-right: 30px; /* Уменьшаем фиксированный отступ */
+      }
+
+    .top {
+        height: 650px;
+    
+        &__header {          
+            background-image: url('./img/star-1.png'), url('./img/star-2.png'), url('./img/star-3.png');
+            background-position: 77px 69px, 100% 0, calc(100% - 200px) calc(100% - 179px);                       
+        }
+        &__title {
+            font-size: $font-size-still;
+            font-weight: $font-weight-big;            
+        }
+        &__text {            
+            max-width: 600px;    
+        }
+
+    } 
+    .stripe {
+        display: flex;
+        overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+        width: 100%; /* Ограничиваем ширину блока */
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 16px; /* Добавляем отступы для контроля */
+    }
+      
+    .about { 
+        padding-top: 74px;
+        padding-bottom: 30px; 
+        background-image: url('./img/star-4.png'), url('./img/star-5.png');
+        background-position: 50px 10px, calc(100% - 10px) calc(100% - 1300px);
+
+        &__title {
+            font-weight: $font-weight-big;
+            color: $color-text-2;
+            font-size: $font-size-still; 
+        }
+        &__text {        
+            max-width: 600px;
+            padding-bottom: 50px;
+        }
+        &__games {
+            max-width: 100%;        
+            gap: 20px; 
+            justify-content: space-around;       
+        }
+        &__card {   
+            height: 512px; 
+            width: 340px;           
+                  
+        }
+        &__card img {        
+            width: 100%; /* Чтобы картинка растягивалась на всю карточку */        
+        }
+        &__card-down {
+            margin-top: 0px;
+        }
+    }
+    .mini {        
+        background-color: $background-dark;
+        background-image: url('./img/star-6.png'), url('./img/star-7.png');
+        background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
+        background-repeat: no-repeat;
+
+        &__games {   
+            max-width: 100%; /* Ограничиваем ширину */
+            margin: 0 auto; /* Автоматическое выравнивание по центру */
+            padding: 0 16px; /* Добавляем отступы слева и справа */
+            box-sizing: border-box; /* Учитываем отступы в расчете ширины */
+        }        
+        
+        &__title {      
+            font-weight: $font-weight-big;
+            color: $color-text-2;
+            font-size: $font-size-still;        
+            padding-top: 36px;
+            padding-bottom: 50px;
+        }
+        &__name { 
+            line-height: 1.1;       
+            padding-bottom: 20px;        
+            font-size: $font-size-average;
+            font-weight: $font-weight-big;        
+        }
+        &__descrip {
+            line-height: 1.2;
+            max-width: 400px;
+            padding-bottom: 36px;        
+            font-size: $font-size-normal;
+            font-weight: $font-weight-normal;
+            color: $color-text-1;
+        }
+        &__box {
+            padding: 28px;
+            width: 50%; 
+        }
+        
+    }
+    .btn {    
+        width: 200px;
+        font-size: $font-size-small;
+        font-weight: $font-weight-fat;   
+        font-family: inherit;  
+        box-sizing: border-box;        
+        padding: 16px 65px;   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

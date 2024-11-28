@@ -60,7 +60,6 @@ body {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
-  font-size: 24px;
   font-family: inherit;
   background: #202027;
   box-sizing: border-box;
@@ -76,9 +75,15 @@ body {
 .stripe {
   height: 90px;
   background-color: #BCEC30;
+  width: 100%; /* Ограничиваем ширину блока */
+  box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  padding: 0 16px;
+  min-width: 0; /* Запрещаем вылазить содержимому за пределы */
+  overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+  justify-content: space-between; /* Размещаем элементы равномерно */
   gap: 51px;
 }
 .stripe__word {
@@ -119,7 +124,7 @@ body {
 }
 .about__card {
   background-color: #FFFFFF;
-  width: 378px;
+  max-width: 378px;
   box-sizing: border-box;
   border-radius: 30px;
   text-decoration: none; /* Убираем подчеркивание */
@@ -172,7 +177,6 @@ body {
 }
 
 .mini {
-  height: 3500px;
   background-color: #202027;
   background-image: url("./img/star-6.png"), url("./img/star-7.png");
   background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
@@ -188,6 +192,11 @@ body {
   padding-bottom: 72px;
 }
 .mini__games {
+  flex-wrap: wrap; /* Позволяет элементам переноситься */
+  max-width: 100%; /* Ограничиваем ширину */
+  padding: 0 16px; /* Добавляем отступы для контроля */
+  box-sizing: border-box;
+  margin: 0 auto; /* Центрируем блок */
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -206,6 +215,7 @@ body {
 }
 .mini__card img {
   width: 50%; /* Чтобы картинка растягивалась на всю карточку */
+  max-width: 50%; /* Не позволяет картинке выходить за пределы */
   border-radius: 30px 30px 0 0; /* Скругление верхних углов */
 }
 .mini__box {
@@ -214,6 +224,7 @@ body {
 }
 .mini__name {
   padding-bottom: 24px;
+  max-width: 504px;
   line-height: 59px;
   font-size: 48px;
   font-weight: 700;
@@ -241,4 +252,112 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  /*.center {
+      padding-left: calc(50% - 380px);
+      padding-right: calc(50% - 380px);
+  }*/
+  .center {
+    padding-left: 30px; /* Уменьшаем фиксированный отступ */
+    padding-right: 30px; /* Уменьшаем фиксированный отступ */
+  }
+  .top {
+    height: 650px;
+  }
+  .top__header {
+    background-image: url("./img/star-1.png"), url("./img/star-2.png"), url("./img/star-3.png");
+    background-position: 77px 69px, 100% 0, calc(100% - 200px) calc(100% - 179px);
+  }
+  .top__title {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  .top__text {
+    max-width: 600px;
+  }
+  .stripe {
+    display: flex;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    width: 100%; /* Ограничиваем ширину блока */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px; /* Добавляем отступы для контроля */
+  }
+  .about {
+    padding-top: 74px;
+    padding-bottom: 30px;
+    background-image: url("./img/star-4.png"), url("./img/star-5.png");
+    background-position: 50px 10px, calc(100% - 10px) calc(100% - 1300px);
+  }
+  .about__title {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 56px;
+  }
+  .about__text {
+    max-width: 600px;
+    padding-bottom: 50px;
+  }
+  .about__games {
+    max-width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .about__card {
+    height: 512px;
+    width: 340px;
+  }
+  .about__card img {
+    width: 100%; /* Чтобы картинка растягивалась на всю карточку */
+  }
+  .about__card-down {
+    margin-top: 0px;
+  }
+  .mini {
+    background-color: #202027;
+    background-image: url("./img/star-6.png"), url("./img/star-7.png");
+    background-position: calc(100% - 93px) calc(100% - 3366px), calc(100% - 93px) calc(100% - 45px);
+    background-repeat: no-repeat;
+  }
+  .mini__games {
+    max-width: 100%; /* Ограничиваем ширину */
+    margin: 0 auto; /* Автоматическое выравнивание по центру */
+    padding: 0 16px; /* Добавляем отступы слева и справа */
+    box-sizing: border-box; /* Учитываем отступы в расчете ширины */
+  }
+  .mini__title {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 56px;
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+  .mini__name {
+    line-height: 1.1;
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .mini__descrip {
+    line-height: 1.2;
+    max-width: 400px;
+    padding-bottom: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #202027;
+  }
+  .mini__box {
+    padding: 28px;
+    width: 50%;
+  }
+  .btn {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    box-sizing: border-box;
+    padding: 16px 65px;
+  }
 }/*# sourceMappingURL=style.css.map */
