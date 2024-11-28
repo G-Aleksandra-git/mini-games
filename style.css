@@ -172,6 +172,9 @@ body {
   font-weight: 500;
 }
 .about__name {
+  display: block;
+  word-break: break-word;
+  line-height: 1.2; /* Уменьшаем межстрочный интервал */
   font-size: 32px;
   font-weight: 700;
 }
