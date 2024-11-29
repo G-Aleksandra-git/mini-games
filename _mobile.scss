@@ -1,12 +1,16 @@
 @media (max-width: 767px) {
 
+    .center {
+        padding-left: 16px; /* Уменьшаем фиксированный отступ */
+        padding-right: 16px; /* Уменьшаем фиксированный отступ */
+    }
+
     .top {
-        height: 600px;
+        height: 650px;
         
         &__header { 
-            height: 100%;      
-            padding-top: 147px;
-            padding-bottom: 131px;
+            height: 100%;   
+            padding: 147px 40px 131px 40px;              
             background-color: #E1FF8F;
             background-image: url('./img/star-9.png'), url('./img/star-8.png');
             background-position: 37px 64px, 100% 0;
@@ -14,12 +18,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 36px;
+            gap: 36px;            
         }
-        &__title {
+        
+        &__title {           
             font-size: $font-size-another;
             font-weight: $font-weight-big;          
-            line-height: 1.1;   
+            line-height: 49px;   
             text-align: center;        
         }
         &__text {
@@ -31,14 +36,15 @@
             display: none;
         }
         &__btn-mob {
+            max-width: 285px;
+            width: 100%;
             display: block;
             text-decoration-line: none;
         }
 
     }
 
-    .btn {
-        width: 285px;
+    .btn {        
         font-size: $font-size-small;
         font-weight: $font-weight-fat; 
         font-family: inherit;    
@@ -148,7 +154,6 @@
                 font-weight: $font-weight-fat;
             }
         }
-
     }
 
 

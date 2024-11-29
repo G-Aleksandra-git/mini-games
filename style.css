@@ -84,8 +84,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   padding: 0 16px;
-  min-width: 0; /* Запрещаем вылазить содержимому за пределы */
-  overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+  overflow-x: hidden; /* Добавляем горизонтальную прокрутку */
   justify-content: space-between; /* Размещаем элементы равномерно */
   gap: 51px;
 }
@@ -203,7 +202,6 @@ body {
 .mini__games {
   flex-wrap: wrap; /* Позволяет элементам переноситься */
   max-width: 100%; /* Ограничиваем ширину */
-  padding: 0 16px; /* Добавляем отступы для контроля */
   box-sizing: border-box;
   margin: 0 auto; /* Центрируем блок */
   display: flex;
@@ -333,7 +331,6 @@ body {
   .mini__games {
     max-width: 100%; /* Ограничиваем ширину */
     margin: 0 auto; /* Автоматическое выравнивание по центру */
-    padding: 0 16px; /* Добавляем отступы слева и справа */
     box-sizing: border-box; /* Учитываем отступы в расчете ширины */
   }
   .mini__title {
@@ -371,13 +368,16 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .center {
+    padding-left: 16px; /* Уменьшаем фиксированный отступ */
+    padding-right: 16px; /* Уменьшаем фиксированный отступ */
+  }
   .top {
-    height: 600px;
+    height: 650px;
   }
   .top__header {
     height: 100%;
-    padding-top: 147px;
-    padding-bottom: 131px;
+    padding: 147px 40px 131px 40px;
     background-color: #E1FF8F;
     background-image: url("./img/star-9.png"), url("./img/star-8.png");
     background-position: 37px 64px, 100% 0;
@@ -390,7 +390,7 @@ body {
   .top__title {
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 49px;
     text-align: center;
   }
   .top__text {
@@ -402,11 +402,12 @@ body {
     display: none;
   }
   .top__btn-mob {
+    max-width: 285px;
+    width: 100%;
     display: block;
     text-decoration-line: none;
   }
   .btn {
-    width: 285px;
     font-size: 16px;
     font-weight: 600;
     font-family: inherit;
