@@ -46,6 +46,7 @@ body {
         line-height: 78px;
     }
     &__text {
+        line-height: 32px;
         font-size: $font-size-normal;
         font-weight: $font-weight-normal;
         color: $color-text-1;
@@ -121,6 +122,7 @@ body {
         color: $color-text-2;
         max-width: 788px;
         padding-bottom: 72px;
+        line-height: 32px;
     }
     &__games {
         max-width: 1200px;
@@ -179,12 +181,13 @@ body {
         background-color: $background-game;
         font-size: $font-size-small;
         font-weight: $font-weight-small;
+        line-height: 110%;
 
     }
     &__name {
         display: block;
         word-break: break-word;
-        line-height: 1.2; /* Уменьшаем межстрочный интервал */
+        line-height: 39px; /* Уменьшаем межстрочный интервал */
         font-size: $font-size-average;
         font-weight: $font-weight-big;
     }
@@ -256,6 +259,7 @@ body {
     }
     &__btn {
         height: 66px;
+        line-height: 141.69%;
         cursor: pointer;
     }
 
@@ -268,7 +272,8 @@ body {
         margin: 0;        
         text-align: center;
         font-size: $font-size-normal;
-        font-weight: $font-weight-fat;   
+        font-weight: $font-weight-fat;  
+        line-height: 29px; 
     }
 }
 @import 'tablet';

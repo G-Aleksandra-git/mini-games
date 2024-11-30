@@ -90,9 +90,10 @@
         &__title {
             font-weight: $font-weight-big;
             color: $color-text-2;
+            line-height: 49px;
             font-size: $font-size-another;
             padding-top: 48px;
-            padding-bottom: 42px; 
+            padding-bottom: 48px; 
         }
         &__card {
             background-color: #FFFFFF;
@@ -123,7 +124,7 @@
             width: 100%;
             box-sizing: border-box;
             max-width: 100%;
-            line-height: 1.1;       
+            line-height: 39px;       
             padding-bottom: 16px;                   
             font-size: $font-size-average;
             font-weight: $font-weight-big; 
@@ -131,10 +132,10 @@
         }
         &__descrip {
             box-sizing: border-box;
-            line-height: 1.2;
+            line-height: 20px;
             max-width: 400px;
             padding-bottom: 32px;        
-            font-size: $font-size-normal;
+            font-size: $font-size-small;
             font-weight: $font-weight-normal;
             color: $color-text-1;
             align-self: flex-start;
@@ -149,6 +150,7 @@
             padding: 40px 0px;
 
             &__text {
+                line-height: 20px;
                 text-align: center;
                 font-size: $font-size-small;
                 font-weight: $font-weight-fat;
