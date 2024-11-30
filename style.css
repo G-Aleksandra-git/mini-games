@@ -46,6 +46,7 @@ body {
   line-height: 78px;
 }
 .top__text {
+  line-height: 32px;
   font-size: 24px;
   font-weight: 400;
   color: #202027;
@@ -119,6 +120,7 @@ body {
   color: #FFFFFF;
   max-width: 788px;
   padding-bottom: 72px;
+  line-height: 32px;
 }
 .about__games {
   max-width: 1200px;
@@ -175,11 +177,12 @@ body {
   background-color: #F7F7F7;
   font-size: 16px;
   font-weight: 500;
+  line-height: 110%;
 }
 .about__name {
   display: block;
   word-break: break-word;
-  line-height: 1.2; /* Уменьшаем межстрочный интервал */
+  line-height: 39px; /* Уменьшаем межстрочный интервал */
   font-size: 32px;
   font-weight: 700;
 }
@@ -247,6 +250,7 @@ body {
 }
 .mini__btn {
   height: 66px;
+  line-height: 141.69%;
   cursor: pointer;
 }
 
@@ -259,6 +263,7 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
+  line-height: 29px;
 }
 
 @media (max-width: 1024px) {
@@ -452,9 +457,10 @@ body {
   .mini__title {
     font-weight: 700;
     color: #FFFFFF;
+    line-height: 49px;
     font-size: 40px;
     padding-top: 48px;
-    padding-bottom: 42px;
+    padding-bottom: 48px;
   }
   .mini__card {
     background-color: #FFFFFF;
@@ -486,7 +492,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     max-width: 100%;
-    line-height: 1.1;
+    line-height: 39px;
     padding-bottom: 16px;
     font-size: 32px;
     font-weight: 700;
@@ -494,10 +500,10 @@ body {
   }
   .mini__descrip {
     box-sizing: border-box;
-    line-height: 1.2;
+    line-height: 20px;
     max-width: 400px;
     padding-bottom: 32px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     color: #202027;
     align-self: flex-start;
@@ -512,6 +518,7 @@ body {
     padding: 40px 0px;
   }
   .mini .footer__text {
+    line-height: 20px;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
