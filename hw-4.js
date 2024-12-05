@@ -116,14 +116,16 @@ for (const key in book) {
 }
 // Задание 4 Создайте массив из 10 случайных чисел. 
 // Напишите код, который находит минимальное число в массиве и выводит его в консоль.
-const numbers = Array.from({ length: 10 }, () => Math.random() * 100 + 1);
+const numbers = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100 + 1));
 console.log("Массив чисел:", numbers);
 
 const minNumber = Math.min(...numbers);
 console.log("Минимальное число:", minNumber);
 
+
 // Array.from: создает массив определенной длины (в данном случае 10 элементов).
 // Math.random() генерирует случайное число от 0 до 1.
+// Math.floor округляет число до целого.
 // Math.min: функция, она возвращает минимальное значение из списка чисел.
 // ...numbers: оператор расширения, который раскрывает массив 
 
