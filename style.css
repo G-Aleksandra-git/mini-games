@@ -36,10 +36,8 @@ body {
   flex-direction: column;
   gap: 24px;
 }
-.top__content {
-  max-width: 769px;
-}
 .top__title {
+  max-width: 769px;
   font-weight: 700;
   color: #202027;
   font-size: 64px;

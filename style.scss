@@ -35,11 +35,9 @@ body {
         flex-direction: column;
         gap: 24px;
     }
-
-    &__content {
-        max-width: 769px;              
-    }
+    
     &__title {
+        max-width: 769px; 
         font-weight: $font-weight-big;
         color: $color-text-1;
         font-size: $font-size-big;
