@@ -104,15 +104,19 @@ const result2 = multiplyNumbers('abc', 5);
 function calculateCube() {
     const input = prompt("Введите число:");
     const number = Number(input);
-   
+
     if (isNaN(number)) {
         return 'Переданный параметр не является числом';
     }
     const cube = Math.pow(number, 3);
     return `${number} в кубе равняется ${cube}`;
 }
+
+let count = 0; // счетчик ввода, с останавливающимся циклом после двух введений
 for (let i = 0; i <= 10; i++) {
-    console.log(`${i}: ${calculateCube()}`);
+    if (count >= 2) break; 
+    console.log(calculateCube());
+    count++;
 }
 //Задание 7 Создайте два объекта, circle1 и circle2, каждый из которых имеет свойство radius.
 // Оба объекта должны иметь:
@@ -138,7 +142,6 @@ const circle2 = {
     }
 };
 
-// Пример использования
 console.log("Circle1:");
 console.log("Площадь:", circle1.getArea());
 console.log("Периметр:", circle1.getPerimeter());
