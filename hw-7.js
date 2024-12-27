@@ -106,11 +106,11 @@ console.log("Текущая дата:", currentDate);
 // Задание 9 Создать переменную currentDate, хранящую текущую дату. 
 // Вывести дату, которая наступит через 73 дня после текущей.
 
-const currentDate = new Date(); // Текущая дата
+const currentDate1 = new Date(); // Текущая дата
 const futureDate = new Date(); // Копируем текущую дату
-futureDate.setDate(currentDate.getDate() + 73); // добавляем 73 дня
+futureDate.setDate(currentDate1.getDate() + 73); // добавляем 73 дня
 
-console.log("Текущая дата:", currentDate.toLocaleDateString());
+console.log("Текущая дата:", currentDate1.toLocaleDateString());
 console.log("Дата через 73 дня:", futureDate.toLocaleDateString());
 
 // Задание 10 Написать функцию, которая принимает дату и возвращает ее в формате:
