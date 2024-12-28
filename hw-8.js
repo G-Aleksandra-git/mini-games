@@ -18,15 +18,15 @@ const people = [
 // Чтобы из функции map сделать filter, нужно, в зависимости от результата вызова ruleFunction, 
 // принимать решение о том, добавлять в результирующий массив очередной элемент или нет.
 
-function isPositive() {
+function isPositive(number) {
 // писать код тут
 return number > 0;
 }
-function isMale() {
+function isMale(person) {
 // писать код тут
 return person.gender === 'male';
 }
-function filter() {
+function filter(array, ruleFunction) {
 // писать код тут
 const result = [];
     for (let i = 0; i < array.length; i++) {
