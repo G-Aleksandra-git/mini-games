@@ -1,0 +1,33 @@
+.task {
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black; 
+    max-width: 300px;   
+    min-height: 30px; 
+    text-align: center;
+  }
+#toggleButton, #changeTextButton, #addButton, #deleteButton{    
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#toggleButton:hover {
+    background-color: #0056b3;
+}
+
+#colorButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#colorButton:hover {
+    background-color: #218838;
+}
+
+
