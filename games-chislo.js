@@ -8,7 +8,16 @@ function startGuessingNumber() {
     alert("Я загадал число от 1 до 100. Попробуй угадать!");
 
     while (userGuess !== randomNumber) {
-        userGuess = parseInt(prompt("Введит своё предположение:"), 10); // Получаем ввод пользователя
+        const userInput = prompt("Введи своё предположение:");
+
+        // Обрабатываем нажатие "Отмена"
+        if (userInput === null) {
+            alert("Возвращайся, когда будешь готов сыграть :)");
+            return; // Завершаем игру
+        }
+
+        // Преобразуем ввод пользователя в число
+        userGuess = parseInt(userInput, 10);
 
         if (isNaN(userGuess)) {
             alert("Пожалуйста, введи корректное число!");
@@ -33,3 +42,4 @@ function startGuessingNumber() {
         }
     }
 }
+

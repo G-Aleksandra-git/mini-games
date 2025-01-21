@@ -21,20 +21,30 @@ function startArithmetic() {
             correctAnswer = (num1 / num2).toFixed(2); // Ответ с округлением до двух знаков
         }
 
-        // ответ пользователя
-        const userAnswer = prompt(`Реши: ${num1} ${operation} ${num2}`);
+        while (true) {
+            // Запрашиваем ответ пользователя
+            const userAnswer = prompt(`Реши: ${num1} ${operation} ${num2}`);
 
-        // Выход из игры, если пользователь нажимает "Отмена"
-        if (userAnswer === null) {
-            alert('Игра окончена!');
-            break;
-        }
+            // Выход из игры, если пользователь нажимает "Отмена"
+            if (userAnswer === null) {
+                alert('Возвращайся, когда будешь готов сыграть :)');
+                return; // Завершаем игру
+            }
 
-        // Проверяем ответ
-        if (parseFloat(userAnswer) === parseFloat(correctAnswer)) {
-            alert('Верно! :) Молодец!');
-        } else {
-            alert(`Неверно! Правильный ответ: ${correctAnswer}`);
+            // Проверяем, является ли ввод числом
+            if (isNaN(userAnswer)) {
+                alert('Ты ввел что-то не то, попробуй еще раз.');
+                continue; // Запрашиваем ввод снова
+            }
+
+            // Проверяем ответ
+            if (parseFloat(userAnswer) === parseFloat(correctAnswer)) {
+                alert('Верно! :) Молодец!');
+            } else {
+                alert(`Неверно! Правильный ответ: ${correctAnswer}`);
+            }
+
+            break; // Выходим из цикла после проверки ответа
         }
 
         // Спрашиваем, хочет ли пользователь продолжить

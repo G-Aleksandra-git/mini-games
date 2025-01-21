@@ -26,7 +26,7 @@ scrollContent();// Запускаем анимацию
 // для игры Генератора чисел
 function startColorGenerator() {
     // Генерация случайного цвета 
-    const randomColor = `#${Math.floor(Math.random() * 16000000).toString(16)}`;
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
     // элементы с классами 'mini' и 'about'
     const miniSection = document.querySelector('.mini');
