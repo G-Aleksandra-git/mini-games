@@ -68,9 +68,11 @@ body {
     padding: 16px 65px;
     border-radius: 60px;
     transition: all 0.5s ease;
-    &:hover {
+    border: 1px solid transparent; 
+    &:hover {              
         background-color: $color-border-wite;
-        color: $color-text-1;            
+        color: $color-text-1;      
+        border-color: $color-border-dark;      
     }
     
 }

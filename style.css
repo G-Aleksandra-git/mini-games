@@ -68,10 +68,12 @@ body {
   padding: 16px 65px;
   border-radius: 60px;
   transition: all 0.5s ease;
+  border: 1px solid transparent;
 }
 .btn:hover {
   background-color: #FFFFFF;
   color: #202027;
+  border-color: #202027;
 }
 
 .stripe {
