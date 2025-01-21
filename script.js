@@ -23,3 +23,31 @@ function scrollContent() {
 
 scrollContent();// Запускаем анимацию
 
+// для игры Генератора чисел
+function startColorGenerator() {
+    // Генерация случайного цвета 
+    const randomColor = `#${Math.floor(Math.random() * 16000000).toString(16)}`;
+
+    // элементы с классами 'mini' и 'about'
+    const miniSection = document.querySelector('.mini');
+    const aboutSection = document.querySelector('.about');
+
+    // случайный цвет фона для обоих элементов
+    if (miniSection) {
+        miniSection.style.backgroundColor = randomColor;
+    }
+    if (aboutSection) {
+        aboutSection.style.backgroundColor = randomColor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
