@@ -77,10 +77,12 @@ body {
     
 }
 
-.stripe {    
-    height: 90px;
+.stripe {        
     background-color: #BCEC30;
     width: 100%; /* Ограничиваем ширину блока */
+    
+    &__scroll {
+    height: 90px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
@@ -89,12 +91,20 @@ body {
     overflow-x: hidden; /* Добавляем горизонтальную прокрутку */
     justify-content: space-between; /* Размещаем элементы равномерно */
     gap: 51px;
-    
-    &__word {
+    }
+    &__word {       
+        display: inline-block; /* Элементы в одну строку */
+        padding: 0 10px; 
+        flex-shrink: 0; 
         box-sizing: border-box;
         font-size: $font-size-word;
         font-weight: $font-weight-big;
         line-height: 33px;
+    }
+    &__star {
+        display: inline-block; 
+        margin: 0 10px; 
+        flex-shrink: 0; 
     }
     &__star-mob {
         display: none;

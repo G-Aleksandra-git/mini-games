@@ -77,9 +77,11 @@ body {
 }
 
 .stripe {
-  height: 90px;
   background-color: #BCEC30;
   width: 100%; /* Ограничиваем ширину блока */
+}
+.stripe__scroll {
+  height: 90px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
@@ -90,10 +92,18 @@ body {
   gap: 51px;
 }
 .stripe__word {
+  display: inline-block; /* Элементы в одну строку */
+  padding: 0 10px;
+  flex-shrink: 0;
   box-sizing: border-box;
   font-size: 30px;
   font-weight: 700;
   line-height: 33px;
+}
+.stripe__star {
+  display: inline-block;
+  margin: 0 10px;
+  flex-shrink: 0;
 }
 .stripe__star-mob {
   display: none;
