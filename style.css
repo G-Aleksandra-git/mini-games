@@ -68,16 +68,20 @@ body {
   padding: 16px 65px;
   border-radius: 60px;
   transition: all 0.5s ease;
+  border: 1px solid transparent;
 }
 .btn:hover {
   background-color: #FFFFFF;
   color: #202027;
+  border-color: #202027;
 }
 
 .stripe {
-  height: 90px;
   background-color: #BCEC30;
   width: 100%; /* Ограничиваем ширину блока */
+}
+.stripe__scroll {
+  height: 90px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
@@ -88,10 +92,18 @@ body {
   gap: 51px;
 }
 .stripe__word {
+  display: inline-block; /* Элементы в одну строку */
+  padding: 0 10px;
+  flex-shrink: 0;
   box-sizing: border-box;
   font-size: 30px;
   font-weight: 700;
   line-height: 33px;
+}
+.stripe__star {
+  display: inline-block;
+  margin: 0 10px;
+  flex-shrink: 0;
 }
 .stripe__star-mob {
   display: none;

@@ -33,7 +33,13 @@ function startQuiz() {
             `${currentQuestion.question}\n${currentQuestion.options.join("\n")}`
         );
 
-        // Проверяем правильность
+        // Проверяем, нажал ли пользователь "Отмена"
+        if (userAnswer === null) {
+            alert("Возвращайся, когда будешь готов сыграть :)");
+            return; 
+        }
+
+        // Проверяем правильность ответа
         if (
             parseInt(userAnswer) === currentQuestion.correctAnswer || // Проверка номера
             userAnswer?.trim().toLowerCase() === currentQuestion.correctText.toLowerCase() // Проверка текста

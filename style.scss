@@ -68,31 +68,44 @@ body {
     padding: 16px 65px;
     border-radius: 60px;
     transition: all 0.5s ease;
-    &:hover {
+    border: 1px solid transparent; 
+    &:hover {              
         background-color: $color-border-wite;
-        color: $color-text-1;            
+        color: $color-text-1;      
+        border-color: $color-border-dark;      
     }
     
 }
 
-.stripe {    
-    height: 90px;
+.stripe {        
     background-color: #BCEC30;
+    overflow: hidden; /* Добавляем горизонтальную прокрутку */
     width: 100%; /* Ограничиваем ширину блока */
+    
+    &__scroll {
+    height: 90px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 16px;   
-    overflow-x: hidden; /* Добавляем горизонтальную прокрутку */
+    padding: 0 16px;       
     justify-content: space-between; /* Размещаем элементы равномерно */
     gap: 51px;
-    
-    &__word {
+    transform: translateX(-2329px);
+    }
+    &__word {       
+        display: inline-block; /* Элементы в одну строку */
+        padding: 0 10px; 
+        flex-shrink: 0; 
         box-sizing: border-box;
         font-size: $font-size-word;
         font-weight: $font-weight-big;
         line-height: 33px;
+    }
+    &__star {
+        display: inline-block; 
+        margin: 0 10px; 
+        flex-shrink: 0; 
     }
     &__star-mob {
         display: none;

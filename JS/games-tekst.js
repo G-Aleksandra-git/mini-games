@@ -1,3 +1,4 @@
+ 
 function startTurnTheTextOver() {
     let continuePlaying = true;
 
@@ -5,10 +6,16 @@ function startTurnTheTextOver() {
         // Запрашиваем текст у пользователя
         const userInput = prompt("Введи слово или фразу задом наперед. Пошаманю и посмотрим, что получилось :)");
 
+        // если пользователь хочет отменить игру
+        if (userInput === null) {
+            alert("Возвращайся, когда будешь готов сыграть :)");
+            return; 
+        }
+
         // Проверяем, чтобы пользователь что-то ввел
-        if (userInput === null || userInput.trim() === "") {
+        if (userInput.trim() === "") {
             alert("Ты ничего не ввел. Для магии нужно хотя бы одно слово.");
-            continue;
+            continue; // Повторяем запрос
         }
 
         // Переворачиваем текст
@@ -25,4 +32,9 @@ function startTurnTheTextOver() {
         }
     }
 }
- 
+
+
+
+
+
+
