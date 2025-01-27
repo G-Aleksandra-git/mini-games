@@ -79,6 +79,7 @@ body {
 
 .stripe {        
     background-color: #BCEC30;
+    overflow: hidden; /* Добавляем горизонтальную прокрутку */
     width: 100%; /* Ограничиваем ширину блока */
     
     &__scroll {
@@ -87,10 +88,10 @@ body {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 16px;   
-    overflow-x: hidden; /* Добавляем горизонтальную прокрутку */
+    padding: 0 16px;       
     justify-content: space-between; /* Размещаем элементы равномерно */
     gap: 51px;
+    transform: translateX(-2329px);
     }
     &__word {       
         display: inline-block; /* Элементы в одну строку */
